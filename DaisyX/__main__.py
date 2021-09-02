@@ -63,7 +63,12 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello 👋 There, I'm [innexia](https://telegra.ph/file/c61e0caa74707d86aef70.jpg)
+Hello 👋 There, I'm [SHU KURENAI](https://telegra.ph/file/cf1154786ee5831a1b2e5.jpg)
+I am an Cartoon Themed group management bot.
+
+Managed by Pigasus Updates for Your Telegram Group
+
+Join @PigasusUpdates & @PigasusSupport
 
 An Advanced Telegram Group Management Bot For All Your Needs !!
 """
@@ -74,7 +79,7 @@ buttons = [
         InlineKeyboardButton(text="Help", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="Add Me", url="t.me/Innexiabot?startgroup=true"),
+        InlineKeyboardButton(text="Add Me", url="http://t.me/ShuKurenaithebot?startgroup=true"),
     ],
 ]
 
@@ -82,7 +87,7 @@ buttons = [
 HELP_STRINGS = f"""
 *SETTINGS*
 ✪ Select one of the settings that you want to change!
-✪ Join Support Group @InnexiaSupport!
+✪ Join Support Group @pigasusUpdates!
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
@@ -90,7 +95,7 @@ HELP_STRINGS = f"""
 
 
 DONATE_STRING = (
-    """Hey 👋 u can make a donation to innexia bot join us @InnexiaDonate !"""
+    """Hey 👋 u can make a donation to shu bot no idea us @ !"""
 )
 
 
@@ -351,10 +356,10 @@ def DaisyX_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by Mr Sammy.* "
+            text=f"*😍 Hi again!  The name's {shu kurenai} 😍 \n\nAs  You I'm a next generational group management bot developed by pigasus.* "
             f"\n\n 🔥 Join [丂ﾑﾶﾶƳ](https://t.me/AboutSammy) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
-            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/473cc17913393959e0667.jpg)"
+            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/cf1154786ee5831a1b2e5.jpg)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
